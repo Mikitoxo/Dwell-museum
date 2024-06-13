@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwell Museum</title>
+    <link rel="stylesheet" href="dwellmuseum.css">
+    <script src="dwellmuseum.js" defer></script>
+</head>
+<body>
+
+    <nav> <!--semantic tag:make the page more meaningful--->
+        <div class="logoHolder">
+           <img src="Black And White Aesthetic Minimalist Modern Simple Typography Coconut Cosmetics Logo.png" alt="logo" id="logo">
+       </div>
+        <ul id="menuItems">
+          <li><a href="">Home</a></li>
+          <li><a href="dwellmuseumexhibitions.html" id="exhibitionBtn">Exhibitions</a></li>
+          <li><a href="dwellmuseumevents.html"id="eventsBtn">Events</a></li><!-- Add ID to the Events button -->
+          <li><a href="dwellmuseumlocation.html" id="locationBtn">location</a></li><!-- Add a new list item for the location button -->
+          <li><a href="dwellmuseumcontacts.html" id="contactsBtn">Contacts</a></li> <!-- Add id to the Contacts button -->
+        </ul>
+     </nav>
+     <section class="hero">
+        <img src="vangogh.gif" alt="Banner Image">
+        <div class="hero-content">
+            <h2>Explore the wonders of our collections</h2>
+            <p>Discover artifacts, artworks, and stories that inspire and educate using the power of technology.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </section>
+
+     <main>
+        <div id="exhibitionReg">
+            <table id="tableInfo">
+                <caption>Check out our First exhibitions of the year below:</caption>
+                <thead>
+                    <tr class="tableheader">
+                        <th>Name</th>
+                        <th>Information</th>
+                        <th>Cost</th>
+                        <th>Date and time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tablebody rowcolor">
+                        <td>Frida Kahlo</td>
+                        <td class="tabledescription"> Introducing the most pouplar works of the prolific artist including 'the two Fridas' and many more.</td>
+                        <td>Kshs 3000/hr</td>
+                        <td>Friday 3rd May 2024 11:00am to 4:00pm</td>
+                    </tr>
+                    <tr class="tablebody rowcolor2">
+                        <td>Vincent Van Gogh</td>
+                        <td class="tabledescription"> Join us while we embark on an adventure to rediscover Van Gogh's iconic 'starry night' for the first time in Africa using virtual reality technology.</td>
+                        <td>Kshs 4000/one and a half hours</td>
+                        <td>Friday 17th May 2024 11:00am to 4:00pm</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+       </div>
+     
+       <div class="museumInfo">
+        <h3>About the Museum</h3>
+        <p>The Dwell Museum is a world-class institution dedicated to showcasing the best of modern and contemporary art. With a focus on innovation and technology, we aim to provide a unique and engaging experience for all our visitors.</p>
+       </div>
+    
+    
+    <div class="form">
+        <form class="formInfo"  >
+            <caption>Fill in the form below for the available exhibition you would wish to attend.</caption>
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name">
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of visit:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div class="form-group">
+            <label for="dov">Duration of visit:</label>
+            <input type="time" id="dov" name="dov">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender">
+            <label for="other">other</label>
+            <input type="radio" id="other" name="gender">
+        </div>
+        <div class="form-group">
+            <label for="Snack options">Snack options (to be eaten in the lounge after the tour):</label>
+            <select id="Snack options" name="Snack options">
+                <option value="biscuits">biscuits</option>
+                <option value="popcorn">popcorn</option>
+                <option value="cake">cake</option>
+                <option value="crisps">crisps</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit" onclick="validateForm()">
+        </form>
+    </div>
+
+    <div class="art-quiz">
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">When was Frida Kahlo born?</h2>
+            <ul>
+                <li>
+                  <input type="radio" name="answer" id="a" class="answer" >
+                  <label for="a" id="a_text">1910</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="b" class="answer" >
+                  <label for="b" id="b_text">1906</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="c" class="answer" >
+                  <label for="c" id="c_text">1900</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="d" class="answer" >
+                  <label for="d" id="d_text">1907</label>
+                </li>
+              </ul>
+         </div>
+         <button id="submit">Submit</button>
+    </div>
+</div>
+</main>
+    <footer>
+        <p>2024 Dwell Museum. All rights reserved. Created by Miki 🎀</p>
+    </footer>
